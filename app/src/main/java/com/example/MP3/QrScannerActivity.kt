@@ -1,15 +1,14 @@
-package com.example.MP3
+package com.example.mp3
 
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.MP3.R
-import com.example.MP3.R.id.zxing_viewfinder_view
 import com.example.MP3.databinding.ActivityQrScannerBinding
 import com.journeyapps.barcodescanner.CaptureManager
 import com.journeyapps.barcodescanner.DecoratedBarcodeView

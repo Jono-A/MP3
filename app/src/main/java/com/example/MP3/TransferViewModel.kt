@@ -1,4 +1,4 @@
-package com.example.MP3
+package com.example.mp3
 
 import android.os.Message
 import android.widget.Toast
@@ -37,7 +37,7 @@ class TransferViewModel  : ViewModel() {
            }
 
        }
-        ref.child("MP3/users/$barcodeResult").addListenerForSingleValueEvent(objectListener)
+        ref.child("mp3/users/$barcodeResult").addListenerForSingleValueEvent(objectListener)
     }
 
     fun transferFund(userid: String?,barcodeResult : String?, amount : Double) {
@@ -68,7 +68,7 @@ class TransferViewModel  : ViewModel() {
                                         uid
                                     )
 
-                                    ref.child("MP3/users/$barcodeResult").setValue(updatedUser)
+                                    ref.child("mp3/users/$barcodeResult").setValue(updatedUser)
                                         .addOnCompleteListener {
                                             if (it.isSuccessful) states.value =
                                                 TransferState.TransactionSuccess
@@ -82,7 +82,7 @@ class TransferViewModel  : ViewModel() {
                                 override fun onCancelled(error: DatabaseError) {}
                             }
 
-                            ref.child("MP3/users/$barcodeResult").addListenerForSingleValueEvent(objectListener)
+                            ref.child("mp3/users/$barcodeResult").addListenerForSingleValueEvent(objectListener)
                         } else {
                             //
                         }
@@ -95,7 +95,7 @@ class TransferViewModel  : ViewModel() {
 
                 override fun onCancelled(error: DatabaseError) {}
             }
-            ref.child("MP3/users/$userid").addListenerForSingleValueEvent(objectListener)
+            ref.child("mp3/users/$userid").addListenerForSingleValueEvent(objectListener)
         }
 
     }
@@ -116,7 +116,7 @@ class TransferViewModel  : ViewModel() {
                     usersCurrentBalance,
                     uid
                 )
-                ref.child("MP3/users/$userid").setValue(updatedUser)
+                ref.child("mp3/users/$userid").setValue(updatedUser)
                     .addOnCompleteListener {
                         if(it.isSuccessful) states.value = TransferState.DeductionSuccess
                         else states.value = TransferState.Error
@@ -130,7 +130,7 @@ class TransferViewModel  : ViewModel() {
             }
 
         }
-        ref.child("MP3/users/$userid").addListenerForSingleValueEvent(objectListener)
+        ref.child("mp3/users/$userid").addListenerForSingleValueEvent(objectListener)
     }
     fun addValue(userid: String?, amount : Double) {
         val objectListener = object : ValueEventListener {
@@ -149,7 +149,7 @@ class TransferViewModel  : ViewModel() {
                     uid
                 )
 
-                ref.child("MP3/users/$userid").setValue(updatedUser)
+                ref.child("mp3/users/$userid").setValue(updatedUser)
                     .addOnCompleteListener {
                         if(it.isSuccessful) states.value = TransferState.ValueAdded
                         else states.value = TransferState.Error
@@ -161,6 +161,6 @@ class TransferViewModel  : ViewModel() {
             override fun onCancelled(error: DatabaseError) {}
         }
 
-        ref.child("MP3/users/$userid").addListenerForSingleValueEvent(objectListener)
+        ref.child("mp3/users/$userid").addListenerForSingleValueEvent(objectListener)
     }
 }

@@ -1,4 +1,4 @@
-package com.example.MP3
+package com.example.mp3
 
 sealed class TransferState {
 

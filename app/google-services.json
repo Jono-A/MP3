@@ -47,7 +47,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:592871005144:android:cc1c03aeb668c1e2ccb0ad",
         "android_client_info": {
-          "package_name": "com.example.MP3"
+          "package_name": "com.example.mp3"
         }
       },
       "oauth_client": [
@@ -55,7 +55,7 @@
           "client_id": "592871005144-157r77fq7ti0842iltm1p3t2udhbkk20.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.MP3",
+            "package_name": "com.example.mp3",
             "certificate_hash": "fa35b0845c64a57c1c8cd8d6c11164863cc86648"
           }
         },

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bright_pink"
-    tools:context="com.example.MP3.QrActivity">
+    tools:context="com.example.mp3.QrActivity">
 
     <include layout="@layout/toolbar_title"/>
 
