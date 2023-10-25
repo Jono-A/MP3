@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bright_pink"
+    android:background="@drawable/bg_toolbar"
     tools:context="com.example.MP3.TransferActivity">
 
     <androidx.appcompat.widget.AppCompatButton
@@ -14,19 +14,19 @@
         android:layout_marginTop="15dp"
         android:background="@color/transparent"
         android:fontFamily="@font/montserrat_bold"
-        android:text="@string/cancel"
+        android:text="@string/back"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <include layout="@layout/toolbar_title"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="70dp"
         android:paddingStart="20dp">
 
         <TextView
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/send_to"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:fontFamily="@font/montserrat_semibold"/>
 
         <TextView
@@ -68,7 +68,7 @@
             android:text="@string/enter_amount"
             android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat_regular"/>
+            android:fontFamily="@font/montserrat_bold"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -78,8 +78,8 @@
                 android:id="@+id/cv_2"
                 android:layout_width="330dp"
                 android:layout_height="100dp"
-                android:elevation="30dp"
-                android:backgroundTint="@color/dirty_white"
+                android:elevation="20dp"
+                android:backgroundTint="@color/blue"
                 app:layout_constraintStart_toStartOf="parent"
                 app:cardCornerRadius="35dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -90,11 +90,10 @@
                     android:id="@+id/et_amount"
                     android:layout_width="280dp"
                     android:layout_height="80dp"
-                    android:hint="0.00"
                     android:inputType="number"
                     android:layout_gravity="center"
                     android:textAlignment="center"
-                    android:textSize="44sp"
+                    android:textSize="50sp"
                     android:fontFamily="@font/montserrat_semibold"/>
 
             </androidx.cardview.widget.CardView>
@@ -107,9 +106,9 @@
         android:id="@+id/bttn_transfer"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:background="@drawable/bg_button_white"
+        android:background="@color/blue"
         android:text="@string/Send"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:fontFamily="@font/montserrat_semibold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">mp3</string>
     <string name="mp3">&lt;/mp3</string>
-    <string name="welcome">Welcome!</string>
+    <string name="home">Home</string>
     <string name="signup_message">Sign up</string>
     <string name="email">Email</string>
     <string name="name">Name</string>
@@ -13,16 +13,16 @@
     <string name="tv_login"><u>Already have an account?</u></string>
     <string name="hello">Hello,</string>
     <string name="php">Php.</string>
-    <string name="wallet_balance">Wallet Balance</string>
-    <string name="logout">log out</string>
-    <string name="qr_message">Scan This QR Code</string>
+    <string name="balance">Balance</string>
+    <string name="logout">Log out</string>
+    <string name="qr_message">Scan QR Code</string>
     <string name="cancel">cancel</string>
     <string name="enter_amount">Enter amount:</string>
-    <string name="done">done</string>
+    <string name="back">Back</string>
     <string name="send_to">Send to:</string>
     <string name="Send">Send</string>
-    <string name="deposit_money">Deposit Money</string>
-    <string name="add_amount">Add Amount</string>
+    <string name="transfer_money">Transfer Money</string>
+    <string name="add">Add</string>
 
     <!--Keypad-->
     <string name="num1">1</string>
