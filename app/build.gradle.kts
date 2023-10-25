@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mp3"
+    namespace = "com.example.MP3"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.mp3"
+        applicationId = "com.example.MP3"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
