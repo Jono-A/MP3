@@ -5,8 +5,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import com.example.MP3.R
 import com.example.MP3.databinding.ActivityQrBinding
+import com.example.MP3.R
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.google.zxing.BarcodeFormat
