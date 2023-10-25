@@ -1,4 +1,4 @@
-package com.example.mp3
+package com.example.MP3
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -49,7 +49,7 @@ class AuthenticationViewModel : ViewModel() {
             }
 
         }
-        ref.child("mp3/users/" + auth.currentUser?.uid).addValueEventListener(objectListener)
+        ref.child("MP3/users/" + auth.currentUser?.uid).addValueEventListener(objectListener)
     }
 
         fun updateUserProfile(newName : String) {
@@ -133,7 +133,7 @@ class AuthenticationViewModel : ViewModel() {
 
         )
 
-        ref.child("mp3/users/" + auth.currentUser?.uid).setValue(users).addOnCompleteListener {
+        ref.child("MP3/users/" + auth.currentUser?.uid).setValue(users).addOnCompleteListener {
             if(it.isSuccessful) states.value = AuthenticationStates.ProfileUpdated
             else states.value = AuthenticationStates.Error
         }

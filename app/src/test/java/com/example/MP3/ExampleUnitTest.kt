@@ -1,4 +1,4 @@
-package com.example.mp3
+package com.example.MP3
 
 import org.junit.Test
 

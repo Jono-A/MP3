@@ -14,22 +14,22 @@
         android:theme="@style/Theme.mp3"
         tools:targetApi="31">
         <activity
-            android:name="com.example.mp3.AddValueActivity"
+            android:name="com.example.MP3.AddValueActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mp3.TransferActivity"
+            android:name="com.example.MP3.TransferActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mp3.QrScannerActivity"
+            android:name="com.example.MP3.QrScannerActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mp3.QrActivity"
+            android:name="com.example.MP3.QrActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mp3.SignupActivity"
+            android:name="com.example.MP3.SignupActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mp3.LoginActivity"
+            android:name="com.example.MP3.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,7 +38,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.mp3.MainActivity"
+            android:name="com.example.MP3.MainActivity"
             android:exported="false" />
     </application>
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pink"
-    tools:context="com.example.mp3.LoginActivity">
+    tools:context="com.example.MP3.LoginActivity">
     <TextView
         android:id="@+id/tv_appName"
         android:layout_width="match_parent"

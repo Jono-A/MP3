@@ -1,12 +1,8 @@
-package com.example.mp3
+package com.example.MP3
 
-import android.os.Message
-import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.snackbar.Snackbar.make
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -37,7 +33,7 @@ class TransferViewModel  : ViewModel() {
            }
 
        }
-        ref.child("mp3/users/$barcodeResult").addListenerForSingleValueEvent(objectListener)
+        ref.child("MP3/users/$barcodeResult").addListenerForSingleValueEvent(objectListener)
     }
 
     fun transferFund(userid: String?,barcodeResult : String?, amount : Double) {
@@ -68,7 +64,7 @@ class TransferViewModel  : ViewModel() {
                                         uid
                                     )
 
-                                    ref.child("mp3/users/$barcodeResult").setValue(updatedUser)
+                                    ref.child("MP3/users/$barcodeResult").setValue(updatedUser)
                                         .addOnCompleteListener {
                                             if (it.isSuccessful) states.value =
                                                 TransferState.TransactionSuccess
@@ -82,7 +78,7 @@ class TransferViewModel  : ViewModel() {
                                 override fun onCancelled(error: DatabaseError) {}
                             }
 
-                            ref.child("mp3/users/$barcodeResult").addListenerForSingleValueEvent(objectListener)
+                            ref.child("MP3/users/$barcodeResult").addListenerForSingleValueEvent(objectListener)
                         } else {
                             //
                         }
@@ -95,7 +91,7 @@ class TransferViewModel  : ViewModel() {
 
                 override fun onCancelled(error: DatabaseError) {}
             }
-            ref.child("mp3/users/$userid").addListenerForSingleValueEvent(objectListener)
+            ref.child("MP3/users/$userid").addListenerForSingleValueEvent(objectListener)
         }
 
     }
@@ -116,7 +112,7 @@ class TransferViewModel  : ViewModel() {
                     usersCurrentBalance,
                     uid
                 )
-                ref.child("mp3/users/$userid").setValue(updatedUser)
+                ref.child("MP3/users/$userid").setValue(updatedUser)
                     .addOnCompleteListener {
                         if(it.isSuccessful) states.value = TransferState.DeductionSuccess
                         else states.value = TransferState.Error
@@ -130,7 +126,7 @@ class TransferViewModel  : ViewModel() {
             }
 
         }
-        ref.child("mp3/users/$userid").addListenerForSingleValueEvent(objectListener)
+        ref.child("MP3/users/$userid").addListenerForSingleValueEvent(objectListener)
     }
     fun addValue(userid: String?, amount : Double) {
         val objectListener = object : ValueEventListener {
@@ -149,7 +145,7 @@ class TransferViewModel  : ViewModel() {
                     uid
                 )
 
-                ref.child("mp3/users/$userid").setValue(updatedUser)
+                ref.child("MP3/users/$userid").setValue(updatedUser)
                     .addOnCompleteListener {
                         if(it.isSuccessful) states.value = TransferState.ValueAdded
                         else states.value = TransferState.Error
@@ -161,6 +157,6 @@ class TransferViewModel  : ViewModel() {
             override fun onCancelled(error: DatabaseError) {}
         }
 
-        ref.child("mp3/users/$userid").addListenerForSingleValueEvent(objectListener)
+        ref.child("MP3/users/$userid").addListenerForSingleValueEvent(objectListener)
     }
 }

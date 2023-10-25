@@ -1,4 +1,4 @@
-package com.example.mp3
+package com.example.MP3
 
 sealed class AuthenticationStates {
     data class Default(val user: UsersModel?) : AuthenticationStates()

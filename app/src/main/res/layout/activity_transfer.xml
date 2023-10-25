@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bright_pink"
-    tools:context="com.example.mp3.TransferActivity">
+    tools:context="com.example.MP3.TransferActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_cancel"
