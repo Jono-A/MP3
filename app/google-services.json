@@ -1,82 +1,26 @@
 {
   "project_info": {
-    "project_number": "592871005144",
-    "firebase_url": "https://seg31-pastor-kristel-angela-default-rtdb.firebaseio.com",
-    "project_id": "seg31-pastor-kristel-angela",
-    "storage_bucket": "seg31-pastor-kristel-angela.appspot.com"
+    "project_number": "1065868581487",
+    "project_id": "mp3cash-b6357",
+    "storage_bucket": "mp3cash-b6357.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:592871005144:android:cb7fee56570fb0efccb0ad",
-        "android_client_info": {
-          "package_name": "com.example.pastor_mp2"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "592871005144-04jri5hubvq5vvhe0ohp7mm8gq52dkko.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.pastor_mp2",
-            "certificate_hash": "fa35b0845c64a57c1c8cd8d6c11164863cc86648"
-          }
-        },
-        {
-          "client_id": "592871005144-turf4h140kv6ga1omk5lq4or2v9a7le2.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCTk5EvjMqUqtkPELw7XbV4tadSyGTxVuU"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "592871005144-turf4h140kv6ga1omk5lq4or2v9a7le2.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:592871005144:android:cc1c03aeb668c1e2ccb0ad",
+        "mobilesdk_app_id": "1:1065868581487:android:852c2e3aecc65b66e9cb9a",
         "android_client_info": {
           "package_name": "com.example.mp3"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "592871005144-157r77fq7ti0842iltm1p3t2udhbkk20.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.mp3",
-            "certificate_hash": "fa35b0845c64a57c1c8cd8d6c11164863cc86648"
-          }
-        },
-        {
-          "client_id": "592871005144-turf4h140kv6ga1omk5lq4or2v9a7le2.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCTk5EvjMqUqtkPELw7XbV4tadSyGTxVuU"
+          "current_key": "AIzaSyBwUXDv5GO0G0obNxlO4oA-c-NPBC8NrlE"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "592871005144-turf4h140kv6ga1omk5lq4or2v9a7le2.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
