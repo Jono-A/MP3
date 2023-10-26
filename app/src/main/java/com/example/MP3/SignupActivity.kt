@@ -21,10 +21,9 @@ class SignupActivity : AppCompatActivity() {
             handleState(it)
         }
         binding.bttnSigup.setOnClickListener {
-            viewModel.signUp(
-                binding.etEmail.text.toString(),
-                binding.etPassword.text.toString(),
-            )
+            viewModel.signUp(binding.etEmail.text.toString(), binding.etPassword.text.toString(),)
+            val intent = Intent(this@SignupActivity, LoginActivity::class.java)
+            startActivity(intent)
         }
 
     }
