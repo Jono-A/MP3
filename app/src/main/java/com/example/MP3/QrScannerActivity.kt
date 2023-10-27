@@ -21,19 +21,6 @@ class QrScannerActivity : AppCompatActivity(){
     private lateinit var barcodeScannerView: DecoratedBarcodeView
     private lateinit var viewfinderView: ViewfinderView
 
-//    private val barcodeLauncher = registerForActivityResult(ScanContract()) { result ->
-//        if (result.contents == null) {
-//            Toast.makeText(this@QrScannerActivity, "Cancelled", Toast.LENGTH_LONG).show()
-//            MainActivity.launch(this@QrScannerActivity)
-//            finish()
-//        } else {
-//            Toast.makeText(
-//                this@QrScannerActivity,
-//                "Scanned: ${result.contents}",
-//                Toast.LENGTH_LONG
-//            ).show()
-//        }
-//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
