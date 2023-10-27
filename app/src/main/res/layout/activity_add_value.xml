@@ -29,7 +29,7 @@
         tools:layout_editor_absoluteY="86dp"
         app:cardCornerRadius="35dp"
         android:elevation="50dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -46,29 +46,31 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:backgroundTint="#001B1B1E">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_2"
                 android:layout_width="330dp"
                 android:layout_height="100dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/transparent"
                 android:elevation="30dp"
-                android:backgroundTint="@color/blue"
-                app:layout_constraintStart_toStartOf="parent"
-                app:cardCornerRadius="35dp"
+                app:cardBackgroundColor="#001B1B1E"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="40dp">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <EditText
                     android:id="@+id/et_amount"
                     android:layout_width="280dp"
                     android:layout_height="80dp"
-                    android:inputType="number"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="number"
                     android:textAlignment="center"
-                    android:textSize="44sp"
-                    android:fontFamily="@font/montserrat_semibold"/>
+                    android:textSize="44sp" />
 
             </androidx.cardview.widget.CardView>
 
